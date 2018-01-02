@@ -6,10 +6,30 @@
 $gray-medium-light: #eaeaea;
 
 /* universal */
+html{
+  overflow: hidden;
+  height: 100%;
+}
 
 body {
-  background-color: black;
+  background: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-top: 60px;
+  height: 100%;
+  overflow: auto;
+}
+body.home {
+  background: url(BoxBros.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 60px;
+  height: 100%;
+  overflow: auto;
 }
 
 section {
@@ -40,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  color: #aaa;
+  color: #fff;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -53,14 +73,15 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #eee;
 }
 
 p {
   font-size: 1.4em;
   line-height: 1.7em;
   text-align: center;
-  color: #bbb;
+  color: #ccc;
+  background-color:rgba(15,15,15,0.5);
 }
 
 
